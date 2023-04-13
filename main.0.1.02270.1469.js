@@ -1,11 +1,7 @@
-<div id="banner"></div>
+function showBanner() {
+  const banner = document.getElementById('banner');
+  banner.style.display = 'block';
+}
 
-<script>
-  var banner = document.getElementById('banner');
-  banner.innerHTML = 'Welcome to my website!';
-
-  banner.style.backgroundColor = 'blue';
-  banner.style.color = 'white';
-  banner.style.padding = '10px';
-  banner.style.textAlign = 'center';
-</script>
+// Call the function to display the banner after the page has loaded
+window.addEventListener('DOMContentLoaded', showBanner);
